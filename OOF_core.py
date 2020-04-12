@@ -472,7 +472,7 @@ def moveToTxt(new_name, full_link, folder, success_file):
         open_file = codecs.open((folder + '/' + success_file),'a+', encoding='utf-8')
         open_file.write(new_name + houzhui +'|'+ filesize +'|'+ fileid +'|'+ preid +'\n')
         open_file.close()
-        print( "[+]" + filename + "保存到" + folder + '/' +success_file)
+        print( "[+] " + filename + " 保存到 " + folder + '/' +success_file)
     except PermissionError:
         print('[-]Error! Please run as administrator!')
         return 

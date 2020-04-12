@@ -61,7 +61,7 @@ if __name__ == '__main__':
     delExistFile(success_folder)
     delExistFile(failed_file)
 
-    for l in open(input_file,'r'): #遍历txt文件，交给core
+    for l in open(input_file,'r', encoding='UTF-8'): #遍历txt文件，交给core
         link=l.split('|')
         filename=link[0]
         try:
